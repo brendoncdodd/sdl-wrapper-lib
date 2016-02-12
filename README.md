@@ -1,6 +1,7 @@
 # sdl-wrapper-lib
     
 Simple library to make SDL more usable
+    
     Copyright (C) {2016}  {Dodd, Brendon Charles}
 
     This program is free software: you can redistribute it and/or modify

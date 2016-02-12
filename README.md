@@ -1,4 +1,5 @@
 # sdl-wrapper-lib
+
 Simple library to make SDL more usable
     Copyright (C) {2016}  {Dodd, Brendon Charles}
 

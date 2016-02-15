@@ -1,6 +1,6 @@
 # sdl-wrapper-lib
     
-Simple library to make SDL more usable
+Simple library to make SDL more usable. It does have the implementation for a simple game included. Maybe I'll separate all that out later.
     
     Copyright (C) {2016}  {Dodd, Brendon Charles}
 

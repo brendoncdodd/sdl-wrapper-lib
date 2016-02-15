@@ -8,7 +8,7 @@
 class Player : public VisibleObject
 {
 	public:`
-		int draw();
+		
 	private:
 		
 };

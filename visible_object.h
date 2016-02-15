@@ -2,7 +2,8 @@
 #define VISIBLE_OBJECT_H
 
 #include <list>
-#include "game.h"
+
+class Game;	//Hint at Game class so we can have a pointer to it in the constructor
 
 class VisibleObject
 {

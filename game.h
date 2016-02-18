@@ -19,9 +19,7 @@
 
 #include <SDL2/SDL.h>
 #include <list>
-
-#include "dodd_window.h"
-#include "player.h"
+#include "hints.h"
 
 class Game
 {

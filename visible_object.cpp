@@ -15,6 +15,7 @@
 */
 
 #include "visible_object.h"
+#include "game.h"
 
 VisibleObject::VisibleObject(Game* master)
 {

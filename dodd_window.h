@@ -18,6 +18,7 @@
 #define DODD_WINDOW_H
 
 #include <SDL2\SDL.h>
+#include "hints.h"
 
 class DoddWindow
 {

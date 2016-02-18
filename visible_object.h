@@ -19,7 +19,7 @@
 
 #include <SDL2/SDL.h>
 #include <list>
-#include "game.h"
+#include "hints.h"
 
 class VisibleObject
 {

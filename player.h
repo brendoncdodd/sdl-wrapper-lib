@@ -18,8 +18,7 @@
 #define PLAYER_H
 
 #include <SDL2\SDL.h>
-#include "visible_object.h"
-#include "game.h"
+#include "hints.h"
 
 class Player : public VisibleObject
 {

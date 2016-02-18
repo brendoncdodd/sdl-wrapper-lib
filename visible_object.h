@@ -19,8 +19,7 @@
 
 #include <SDL2/SDL.h>
 #include <list>
-
-class Game;	//Hint at Game class so we can have a pointer to it in the constructor
+#include "game.h"
 
 class VisibleObject
 {

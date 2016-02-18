@@ -15,6 +15,8 @@
 */
 
 #include "game.h"
+#include "dodd_window.h"
+#include "visible_object.h"
 
 DoddGame::DoddGame(int scrW, int scrH)
 	: quit(false)

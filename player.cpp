@@ -15,6 +15,8 @@
 */
 
 #include "player.h"
+#include "visible_object.h"
+#include "game.h"
 
 //Implementation of the Player class
 

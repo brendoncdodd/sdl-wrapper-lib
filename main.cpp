@@ -20,15 +20,13 @@
 const int SCR_W = 1024;
 const int SCR_H = 768;
 
-bool running = true;
-
 Game* game;
 
 int main(int argc, char** argv)
 {
 	game = new Game(SCR_W, SCR_H);
 	
-	while (running)
+	while (game->running)
 	{
 		game->pollEvent();
 		game->update();

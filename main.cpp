@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 {
 	game = new Game(SCR_W, SCR_H);
 	
-	while (game->running)
+	while (game->isRunning())
 	{
 		game->pollEvent();
 		game->update();

@@ -31,7 +31,7 @@ class DoddWindow
 		bool sdlInitFailed;
 	public:
 		DoddWindow(int width, int height);
-		~DoddWindow();``
+		~DoddWindow();
 }
 
 #endif //DODD_WINDOW_H

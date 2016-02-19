@@ -20,11 +20,13 @@
 const int SCR_W = 1024;
 const int SCR_H = 768;
 
-DoddGame* game;
+bool running = true;
+
+Game* game;
 
 int main(int argc, char** argv)
 {
-	game = new DoddGame(SCR_W, SCR_H);
+	game = new Game(SCR_W, SCR_H);
 	
 	while (running)
 	{

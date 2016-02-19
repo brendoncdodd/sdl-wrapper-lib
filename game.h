@@ -35,7 +35,7 @@ class Game
 		std::list<VisibleObject*> visObjects;	//This is aforementioned list
 		DoddWindow* window;						//Pointer to the window for all display tasks
 		SDL_Event event;						//Handle SDL events
-		bool quit;
+		bool running;
 };
 
 #endif //GAME_H

@@ -63,9 +63,19 @@ void Game::pollEvent ()
 	while (SDL_PollEvent(&sdlEvent)) {
 		switch (sdlEvent.type)
 		{
-			case SDL_QUIT:	running = false;
-					break;
-			default:	break;
+			case SDL_QUIT:		running = false;
+						break;
+			
+			case SDL_KEYDOWN:	switch (sdlEvent.keysysm.sym)	//check which key
+						{
+							case SDLK_ESCAPE:	SDL_Event quitEvent = new SDL_Event {SDL_QUIT,0, NULL, NULL};
+										SDL_PushEvent(&quitEvent);
+										delete quitEvent;
+										break;
+						}
+						break;
+			
+			default:		break;
 		}
 	}
 }

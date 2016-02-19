@@ -19,10 +19,11 @@
 
 #include <SDL2\SDL.h>
 #include "hints.h"
+#include "visible_object.h"
 
 class Player : public VisibleObject
 {
-	public:`
+	public:
 		Player(Game* master);
 		~Player();
 	private:

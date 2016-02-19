@@ -53,12 +53,12 @@ Game::draw()
 	}
 }
 
-Game pollEvent ()
+Game::pollEvent ()
 {
 	
 }
 
-Game update()
+Game::update()
 {
 	
 }

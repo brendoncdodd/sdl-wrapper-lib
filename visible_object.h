@@ -23,6 +23,7 @@
 
 class VisibleObject
 {
+	friend class Game;
 	public:
 		VisibleObject(Game *);
 	private:

@@ -24,9 +24,9 @@
 class Game
 {
 	public:
-		DoddGame(int scrW, int scrH);			//will create it's own DoddWindow with dimensions of scrW x scrH
-		DoddGame(DoddWindow *);					//will simply use the window you give it a pointer to as it would its own
-		~DoddGame();
+		Game(int scrW, int scrH);			//will create it's own DoddWindow with dimensions of scrW x scrH
+		Game(DoddWindow *);					//will simply use the window you give it a pointer to as it would its own
+		~Game();
 		void registerVisible(VisibleObject*);	//DoddGame keeps a list of VisibleObjects, for drawing. They don't draw themselves. Only DoddWindow is allowed to directly access the display.
 		void draw();
 		void pollEvent();

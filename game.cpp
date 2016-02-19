@@ -69,3 +69,8 @@ void Game::update()
 {
 	
 }
+
+void Game::isRunning()
+{
+	return running;
+}

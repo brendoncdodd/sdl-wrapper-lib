@@ -26,12 +26,10 @@ DoddWindow::DoddWindow(int width, int height)
 		SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_SHOWN); 				//Creating window
 	
 	sdlRenderer = SDL_CreateRenderer(sdlWindow, -1, SDL_RENDERER_ACCELERATED); 	//Creating renderer
-	
 }
 
-~DoddWindow()
+DoddWindow::~DoddWindow()
 {
-	
 	//Deinitialize all things SDL
 	SDL_DestroyRenderer(sdlRenderer);
 	SDL_DestroyWindow(sdlWindow);

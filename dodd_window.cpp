@@ -22,8 +22,8 @@ DoddWindow::DoddWindow(int width, int height)
 {
 	SDL_Init(SDL_INIT_EVERYTHING); 													//Initializing SDL2
 	
-	sdlWindow = SDL_CreateWindow("Dodd's Game", SDL_WINDOWPOS_CENTERED,
-		SDL_WINDOWPOS_CENTERED, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP); 		//Creating window - in SDL2 we can make it automatically set the resolution to the Desktop size
+	sdlWindow = SDL_CreateWindow("Dodd's Game", SDL_WINDOWPOS_UNDEFINED,
+		SDL_WINDOWPOS_UNDEFINED, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP); 		//Creating window - in SDL2 we can make it automatically set the resolution to the Desktop size
 	
 	sdlRenderer = SDL_CreateRenderer(sdlWindow, -1, SDL_RENDERER_ACCELERATED); 	//Creating renderer
 	

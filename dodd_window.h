@@ -22,6 +22,7 @@
 
 class DoddWindow
 {
+	friend class Game;
 	private:
 		int w, h;
 		

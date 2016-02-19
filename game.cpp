@@ -42,13 +42,14 @@ void Game::registerVisible(VisibleObject* obj)
 
 void Game::draw()
 {
+	SDL_Rect* absoluteRect;
 	for (VisibleObject* currVisObj : visObjects)
 	{
 		for (SDL_Rect* currRect : currVisObj->rects)
 		{
-			
 			absoluteRect = new SDL_Rect;
 			
+			delete absoluteRect;
 		}
 	}
 }

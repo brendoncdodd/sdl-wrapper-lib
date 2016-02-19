@@ -21,7 +21,7 @@
 Game::Game(int scrW, int scrH)
 	: quit(false)
 {
-	window = new DoddWindow(scrW, scrH);`
+	window = new DoddWindow(scrW, scrH);
 }
 
 Game::Game(DoddWindow* newWindow)
@@ -35,12 +35,12 @@ Game::~Game()
 	
 }
 
-Game::registerVisible(VisibleObject* obj)
+void Game::registerVisible(VisibleObject* obj)
 {
 	visObjects.push_back(obj);
 }
 
-Game::draw()
+void Game::draw()
 {
 	for (VisibleObject* currVisObj : visObjects)
 	{
@@ -53,12 +53,12 @@ Game::draw()
 	}
 }
 
-Game::pollEvent ()
+void Game::pollEvent ()
 {
 	
 }
 
-Game::update()
+void Game::update()
 {
 	
 }

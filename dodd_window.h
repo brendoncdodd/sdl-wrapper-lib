@@ -32,6 +32,6 @@ class DoddWindow
 	public:
 		DoddWindow(int width, int height);
 		~DoddWindow();
-}
+};
 
 #endif //DODD_WINDOW_H

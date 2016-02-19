@@ -19,13 +19,13 @@
 #include "visible_object.h"
 
 Game::Game(int scrW, int scrH)
-	: quit(false)
+	: running(true)
 {
 	window = new DoddWindow(scrW, scrH);
 }
 
 Game::Game(DoddWindow* newWindow)
-	: window(newWindow), quit(false)
+	: window(newWindow), running(true)
 {
 	
 }

@@ -42,6 +42,10 @@ void Game::registerVisible(VisibleObject* obj)
 
 void Game::draw()
 {
+	SDL_SetRenderDrawColor(window->sdlRenderer, 0, 0, 0, 255);
+	SDL_RenderClear(window->sdlRenderer);
+	SDL_RenderPresent(window->sdlRenderer);
+	
 	SDL_Rect* absoluteRect;
 	for (VisibleObject* currVisObj : visObjects)
 	{

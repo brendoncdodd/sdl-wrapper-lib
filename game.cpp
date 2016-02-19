@@ -60,7 +60,8 @@ void Game::pollEvent ()
 		switch (sdlEvent.type)
 		{
 			case SDL_QUIT:	running = false;
-						break;	
+					break;
+			default:	break;
 		}
 	}
 }

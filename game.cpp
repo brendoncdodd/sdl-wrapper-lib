@@ -66,12 +66,14 @@ void Game::pollEvent ()
 			case SDL_QUIT:		running = false;
 						break;
 			
-			case SDL_KEYDOWN:	switch (sdlEvent.keysysm.sym)	//check which key
+			case SDL_KEYDOWN:	switch (sdlEvent.key.keysysm.sym)	//check which key
 						{
-							case SDLK_ESCAPE:	SDL_Event quitEvent = new SDL_Event {SDL_QUIT,0, NULL, NULL};
+							case SDLK_ESCAPE:	SDL_Event quitEvent;
+										quitEvent.type = SDL_QUIT;
 										SDL_PushEvent(&quitEvent);
-										delete quitEvent;
 										break;
+							
+							default:		break;
 						}
 						break;
 			

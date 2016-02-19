@@ -22,13 +22,12 @@ Game::Game(int scrW, int scrH)
 	: quit(false)
 {
 	window = new DoddWindow(scrW, scrH);
-	sdlEvent = new SDL_Event;
 }
 
 Game::Game(DoddWindow* newWindow)
 	: window(newWindow), quit(false)
 {
-	sdlEvent = new SDL_Event;
+	
 }
 
 Game::~Game()
@@ -57,8 +56,8 @@ void Game::draw()
 
 void Game::pollEvent ()
 {
-	while (SDL_PollEvent(sdlEvent)) {
-		switch (sdlEvent->type)
+	while (SDL_PollEvent(&sdlEvent)) {
+		switch (sdlEvent.type)
 		{
 			case SDL_QuitEvent:	running = false;
 		}
@@ -70,7 +69,7 @@ void Game::update()
 	
 }
 
-void Game::isRunning()
+bool Game::isRunning()
 {
 	return running;
 }

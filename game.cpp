@@ -59,7 +59,8 @@ void Game::pollEvent ()
 	while (SDL_PollEvent(&sdlEvent)) {
 		switch (sdlEvent.type)
 		{
-			case SDL_QuitEvent:	running = false;
+			case SDL_QUIT:	running = false;
+						break;	
 		}
 	}
 }

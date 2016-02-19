@@ -25,16 +25,17 @@ class Game
 {
 	public:
 		Game(int scrW, int scrH);			//will create it's own DoddWindow with dimensions of scrW x scrH
-		Game(DoddWindow *);					//will simply use the window you give it a pointer to as it would its own
+		Game(DoddWindow *);				//will simply use the window you give it a pointer to as it would its own
 		~Game();
-		void registerVisible(VisibleObject*);	//DoddGame keeps a list of VisibleObjects, for drawing. They don't draw themselves. Only DoddWindow is allowed to directly access the display.
+		void registerVisible(VisibleObject*);		//DoddGame keeps a list of VisibleObjects, for drawing. They don't draw themselves. Only DoddWindow is allowed to directly access the display.
 		void draw();
 		void pollEvent();
 		void update();
+		bool isRunning();				//Accessor for "running" sentinel
 	private:
-		std::list<VisibleObject*> visObjects;	//This is aforementioned list
-		DoddWindow* window;						//Pointer to the window for all display tasks
-		SDL_Event event;						//Handle SDL events
+		std::list<VisibleObject*> visObjects;		//This is aforementioned list
+		DoddWindow* window;				//Pointer to the window for all display tasks
+		SDL_Event sdlEvent;				//Handle SDL events
 		bool running;
 };
 

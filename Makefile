@@ -27,7 +27,7 @@ CXX = g++
 # -w supresses all warnings, you may find that you want to add this
 # -Wl,-subsystem,windows tells the linker to get rid of the console window
 # -Wall (-Wall of text) show me ALL the warnings
-CPPFLAGS = -Wall
+CPPFLAGS = -Wall -std=c++11
 
 #LFLAGS libraries to link against. Note we set up for dynamic linking to SDL2. You'll need the .dll
 CXXFLAGS = -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2.dll

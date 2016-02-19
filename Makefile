@@ -12,6 +12,8 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#Resolves a problem of mingw32-make compatibility with the PATH varible
+SHELL=C:/Windows/System32/cmd.exe	#comment out for linux builds
 
 #SRCS is a whitespace-separated list of source files
 SRCS = visible_object.cpp dodd_window.cpp player.cpp game.cpp main.cpp

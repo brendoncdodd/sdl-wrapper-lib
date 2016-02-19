@@ -18,29 +18,29 @@
 #include "dodd_window.h"
 #include "visible_object.h"
 
-DoddGame::DoddGame(int scrW, int scrH)
+Game::Game(int scrW, int scrH)
 	: quit(false)
 {
 	window = new DoddWindow(scrW, scrH);`
 }
 
-DoddGame::DoddGame(DoddWindow* newWindow)
+Game::Game(DoddWindow* newWindow)
 	: window(newWindow), quit(false)
 {
 	
 }
 
-DoddGame::~DoddGame()
+Game::~Game()
 {
 	
 }
 
-DoddGame::registerVisible(VisibleObject* obj)
+Game::registerVisible(VisibleObject* obj)
 {
 	visObjects.push_back(obj);
 }
 
-DoddGame::draw()
+Game::draw()
 {
 	for (VisibleObject* currVisObj : visObjects)
 	{
@@ -53,12 +53,12 @@ DoddGame::draw()
 	}
 }
 
-DoddGame pollEvent ()
+Game pollEvent ()
 {
 	
 }
 
-DoddGame update()
+Game update()
 {
 	
 }

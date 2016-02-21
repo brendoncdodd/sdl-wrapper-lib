@@ -36,7 +36,7 @@ CXXFLAGS = -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2.dll
 
 EXE = bin\sdl-test.exe
 
-OBJS = $(SRCS:.cpp=.o)
+OBJS = obj\$(SRCS:.cpp=.o)
 
 all : $(SRCS) $(EXE)
 

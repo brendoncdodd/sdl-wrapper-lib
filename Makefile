@@ -16,7 +16,7 @@
 SHELL=C:/Windows/System32/cmd.exe	#comment out for linux builds
 
 #SRCS is a whitespace-separated list of source files
-SRCS = visible_object.cpp dodd_window.cpp player.cpp game.cpp main.cpp
+SRCS = src\visible_object.cpp src\dodd_window.cpp src\player.cpp src\game.cpp src\main.cpp
 
 #These are the paths on my system. You may need to change them
 INCLUDE_PATHS = 
@@ -36,7 +36,8 @@ CXXFLAGS = -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2.dll
 
 EXE = bin\sdl-test.exe
 
-OBJS = obj\$(SRCS:.cpp=.o)
+OBJSINCOMPLETE = $(SRCS:.cpp=.o)
+OBJS = $(OBJSIMCOMPLETE:\src=\obj)
 
 all : $(SRCS) $(EXE)
 
